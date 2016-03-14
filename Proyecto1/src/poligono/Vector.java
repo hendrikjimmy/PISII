@@ -17,4 +17,8 @@ public class Vector {
 		
 		return 0;
 	}
+	
+	public String toString(){
+		return "y="+(punto2.getPosX()-punto1.getPosX())+"x+"+(punto2.getPosY()-punto1.getPosY());
+	}
 }

@@ -26,5 +26,8 @@ public class Punto {
 		this.posY = posY;
 	}
 	
+	public String toString(){
+		return "("+getPosX()+","+getPosY()+")";
+	}
 	
 }
