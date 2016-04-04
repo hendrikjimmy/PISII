@@ -11,11 +11,20 @@ public class Vector {
 		this.punto2=punto2;
 	}
 	
-	public int productoVectorial(Vector vector1,Vector vector2){
-		
-		
-		
-		return 0;
+	public int coordenadaX(){
+		return punto2.posX - punto1.posX;
+	}
+	
+	public int coordenadaY(){
+		return punto2.posY - punto1.posY;
+	}
+	
+	public double modulo(){
+		return Math.sqrt(Math.pow(coordenadaX(), 2)+Math.pow(coordenadaY(), 2));
+	}
+	
+	public int productoVectorial(Vector vector){
+		return this.coordenadaX()*vector.coordenadaY()-this.coordenadaY()*vector.coordenadaX();
 	}
 	
 	public String toString(){
