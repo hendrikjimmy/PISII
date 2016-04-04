@@ -37,7 +37,8 @@ public class UsoPoligono {
 		poligon.add(puntoF);
 		Poligono poligono2 = new Poligono(poligon);
 		
-		
+		Linea ln = new Linea(1, new Punto (1, 1));
+		Linea ln2 = new Linea(2, new Punto (0, 0));
 
 		System.out.println(puntoA);
 		System.out.println(puntoB);
@@ -47,6 +48,9 @@ public class UsoPoligono {
 		System.out.println(poligono1.concavo());
 		System.out.println(poligono2.concavo());
 		System.out.println(poligono2.centroide());
+		System.out.println(ln);
+		System.out.println(ln2);
+		System.out.println(ln.puntoCorte(ln2));
 
 	}
 
